@@ -1,0 +1,24 @@
+#include <iostream>
+
+int main() 
+{
+	setlocale(LC_ALL, "ukr");
+	// Вартість за 1 метр тканини
+	double costPerMeter;
+	std::cout << "Введіть вартість 1 метру тканини: ";
+	std::cin >> costPerMeter;
+
+	// Розміри відрізу тканини
+	double length, width;
+	std::cout << "Введіть довжину (у метрах): ";
+	std::cin >> length;
+	std::cout << "Введіть ширину (у метрах): ";
+	std::cin >> width;
+
+	// Підрахунок вартості тканини
+	double totalCost = length * width * costPerMeter;
+
+	// Результат
+	std::cout << "Загальна вартість тканини: " << totalCost << " грн" << std::endl;
+	return 0;
+}
